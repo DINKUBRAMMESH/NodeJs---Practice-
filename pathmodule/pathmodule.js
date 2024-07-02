@@ -9,9 +9,8 @@
 // console.log(readfile);
 
 
-const path = require('path');
-const fs = require('fs');
-const fullPath = path.join('C:\Users\ASBD\Desktop\NODE.JS-PROSTACK\fs-ex-es6', 'data.txt');
-const readFile = fs.readFileSync('data.txt', 'utf-8');
+import path from 'path';
+import fs from 'fs';
+const fullPath = path.join('C:\\Users\\ASBD\\Desktop\\NODE.JS-PROSTACK\\fs-ex-es6', 'data.txt');
+const readFile = fs.readFileSync(fullPath, 'utf-8');
 console.log(readFile);
-
