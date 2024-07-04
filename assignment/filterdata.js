@@ -25,6 +25,25 @@
 // });   
 
 
+// const fs = require('fs');
+
+// fs.readFile('users.json', 'utf-8', (err, data) => {
+//     if (err) throw err;
+    
+//     let users = JSON.parse(data);
+
+//     let maleUsers = users.filter(user => user.gender === 'Male');
+//     let femaleUsers = users.filter(user => user.gender === 'Female');
+
+//     fs.writeFile('male.json', JSON.stringify(maleUsers), err => {
+//         if (err) throw err;
+//     });
+
+//     fs.writeFile('female.json', JSON.stringify(femaleUsers), err => {
+//         if (err) throw err;
+//     });
+// });
+
 const fs = require('fs');
 
 fs.readFile('users.json', 'utf-8', (err, data) => {
