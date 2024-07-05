@@ -1,5 +1,10 @@
+const fs = require('fs');
 const http =require('http')
 let server = http.createServer((req,res)=>{
+    fs.readfile('index.html','utf-8',(err,data)=>{
+        if (err) throw err
+        res.end(data)
+    })
     res.end("hello ,gm")
 })
 
